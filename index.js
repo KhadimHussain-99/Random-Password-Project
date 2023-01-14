@@ -3,7 +3,6 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 let passEl1 = document.getElementById("pass-box1")
 let passEl2 = document.getElementById("pass-box2")
-let password = 15
 
 function getRandomCharacter() {
     let randomChar = Math.floor( Math.random() * characters.length )
