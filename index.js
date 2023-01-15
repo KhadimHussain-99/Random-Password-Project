@@ -10,15 +10,14 @@ function getRandomCharacter() {
 }
 
 function generateRandomPassword() {
-    let randomPassword1 = " "
+    let randomPassword = ""
         for (let i = 0; i < 15 ; i++){
-            randomPassword1 += getRandomCharacter()
+            randomPassword += getRandomCharacter()
         }
-    passEl1.textContent = randomPassword1
+    return randomPassword
+}
 
-    let randomPassword2 = " "
-        for (let i = 0; i < 15 ; i++){
-            randomPassword2 += getRandomCharacter()
-        }
-    passEl2.textContent = randomPassword2
+function renderPasswords() {
+    passEl1.textContent = generateRandomPassword()
+    passEl2.textContent = generateRandomPassword()     
 }
